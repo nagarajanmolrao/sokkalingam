@@ -1,7 +1,7 @@
 # Sokkalingam
 Sokkalingam is a fully featured movie bot created with RASA Framework and tested with RASA-X
 
-# Advantages of *sokkalingam*
+# Advantages of * sokkalingam *
 	1. Built on RASA, so it is programed to understand Natural Language.
 	2. Highly Interactive with the user.
 	3. Totally modular story flow.
@@ -34,13 +34,13 @@ You need to download and install Visual C++ Build tools from [here](https://visu
 
 4. If your on windows you can re-create the same environment I created using the command
 	```
-	conda env create -f environment.yml --name *yourEnvironmentName*
+	conda env create -f environment.yml --name yourEnvironmentName
 	```
 	Replace *yourEnvironmentName* with a custom environment name.
 	This will create a environment with all the dependencies and install RASA.
 5. Activate the environment with the command 
 	```
-	conda activate *yourEnvironmentName*
+	conda activate yourEnvironmentName
 	```
 	
 6. Once you are using the newly created environment, the first thing to do is to install RASA-X
@@ -53,15 +53,15 @@ This can be easily done by running the command
 
 8. Change your IDE's interpreter to the interpreter of your newly created environment.
 Here in PyCharm, Follow these steps
-	- At the right bottom corner of the window, select *"Current interpreter"*
-	- Select *"Add Interpreter"* and in the left pane select *"Conda Environment"*
-	- Select *"Exsisting Environment"* radio button
-	- In the *"Interpreter"* drop down list, select a interpreter which has *yourEnvironmentName* in it
+	- At the right bottom corner of the window, select "Current interpreter"
+	- Select "Add Interpreter" and in the left pane select "Conda Environment"
+	- Select "Exsisting Environment" radio button
+	- In the "Interpreter" drop down list, select a interpreter which has yourEnvironmentName in it
 	   The entry would be something like,
 		"C:\Users\Anmol\.conda\envs\*yourEnvironmentName*\python.exe"
-		In general,
+	- In general,
 		global environment path\*yourEnvironmentName*\python.exe
-	- Click on *"OK"* and wait till package scanning process completes.
+	- Click on "OK" and wait till package scanning process completes.
 		
 **NOTE : This will work if you are using Anaconda, You will have to figure out your own way for setup interpreter if you are using mannual setup.
 
@@ -71,24 +71,25 @@ Here in PyCharm, Follow these steps
 	```
 10. Please change the following values in the corresponding files mentioned
 	1. *"data/movieSchedule.json"*
-		Add or change the dates to whatever dates you want the bot to allow users to book tickets for.
+		- Add or change the dates to whatever dates you want the bot to allow users to book tickets for.
 			This is important because the bot reads this file first and asks a user to choose a date to continue booking tickets.
 			The bot reads and displays only dates that is greater than the current system date.
-		Change the name of the movie next to the key values on a particular date
+		- Change the name of the movie next to the key values on a particular date
 			This is coimpletely optional as this is just a movie name that will be displayed by the bot.
 			You can leave the defaults unchanged.
 	2. *"data/movieDetails.json"*
-		Add or change the dates to the same dates you changed in the *movieSchedule.json* file
+		- Add or change the dates to the same dates you changed in the *movieSchedule.json* file
 			This is important because the bot searches for the date selected by the user, which is obiviously already present in the *movieSchedule.json* file, and 				sends the user the corresponding IMDB link based on the *movieChoice*.
-		Add or change the terminating string of the IMDB link of the movie corresponding to its position in the *movieSchedule.json* file.
+		- Add or change the terminating string of the IMDB link of the movie corresponding to its position in the *movieSchedule.json* file.
 			You need to add only "tt*******/" from "https://www.imdb.com/title/tt*******/"
 	3. *"data/movieSeatMap.json"*
-		Add or change the dates to the same dates you changed in the *movieSchedule.json* and *"data/movieDetails.json"* file
+		- Add or change the dates to the same dates you changed in the *movieSchedule.json* and *"data/movieDetails.json"* file
 			This is important because the bot searches for the date selected by the user in this file to see the currently available seats for the corresponding 					movie the user has selected.
-		Change any of the "0" to "1"
+		- Change any of the "0" to "1"
 			If you change any of the "0" to "1", the corresponding seat of the corresponding show on the corresponding date is available for the user for booking.
 		
 It's just simple, one Key containing a date in *"data/movieSchedule.json"*, should have same date as key and should have some values in the files *"data/movieDetails.json"* and *"data/movieSeatMap.json"*
+
 You can refer the previous values as a template.
 	
 11. Run the *"Django_server.py"* file as it is required to send the images generated during the chat with *sokkalingam*.
