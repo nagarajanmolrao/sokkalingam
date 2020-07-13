@@ -133,6 +133,3 @@ You need to have this running in order to get replies from *sokkalingam*.
 For some reason, I don't know why , the generated images like the AvailableSeats and TicketQRCode don't show up on RASA-X.
 
 You can still access the images by using the Django WebServer running in the backgroud on port 7000 by default or just open the file in your IDE.
-	
-I am open for suggestions.
-	
