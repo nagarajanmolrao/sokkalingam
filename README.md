@@ -1,7 +1,7 @@
 # Sokkalingam
 Sokkalingam is a fully featured movie bot created with RASA Framework and tested with RASA-X
 
-# Advantages of * sokkalingam *
+# Advantages of *sokkalingam*
 	1. Built on RASA, so it is programed to understand Natural Language.
 	2. Highly Interactive with the user.
 	3. Totally modular story flow.
@@ -58,12 +58,12 @@ Here in PyCharm, Follow these steps
 	- Select "Exsisting Environment" radio button
 	- In the "Interpreter" drop down list, select a interpreter which has yourEnvironmentName in it
 	   The entry would be something like,
-		"C:\Users\Anmol\.conda\envs\*yourEnvironmentName*\python.exe"
+		"C:\Users\Anmol\.conda\envs\yourEnvironmentName\python.exe"
 	- In general,
-		global environment path\*yourEnvironmentName*\python.exe
+		global environment path\yourEnvironmentName\python.exe
 	- Click on "OK" and wait till package scanning process completes.
 		
-**NOTE : This will work if you are using Anaconda, You will have to figure out your own way for setup interpreter if you are using mannual setup.
+**NOTE : This will work if you are using Anaconda, You will have to figure out your own way for setup interpreter if you are using mannual setup.**
 
 9. Run the following command to train the model
 	```
