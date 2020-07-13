@@ -1,5 +1,5 @@
 # Sokkalingam
-Sokkalingam is a fully featured movie bot created with RASA Framework and tested with RASA-X
+Sokkalingam is a fully featured and modular movie ticket booking ChatBot created and tested with RASA Framework and RASA-X
 
 # Advantages of *sokkalingam*
 	1. Built on RASA, so it is programed to understand Natural Language.
