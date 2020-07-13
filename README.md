@@ -52,16 +52,16 @@ This can be easily done by running the command
 7. Once RASA-X is installed, Open your the project folder *sokkalingam* in PyCharm or any IDE you prefer.
 
 8. Change your IDE's interpreter to the interpreter of your newly created environment.
-	Here in PyCharm, Follow these steps
-		1. At the right bottom corner of the window, select *"Current interpreter"*
-		2. Select *"Add Interpreter"* and in the left pane select *"Conda Environment"*
-		3. Select *"Exsisting Environment"* radio button
-		4. In the *"Interpreter"* drop down list, select a interpreter which has *yourEnvironmentName* in it
-			The entry would be something like,
-				C:\Users\Anmol\.conda\envs\*yourEnvironmentName*\python.exe
-			In general,
-				global environment path\*yourEnvironmentName*\python.exe
-		5. Click on *"OK"* and wait till package scanning process completes.
+Here in PyCharm, Follow these steps
+	- At the right bottom corner of the window, select *"Current interpreter"*
+	- Select *"Add Interpreter"* and in the left pane select *"Conda Environment"*
+	- Select *"Exsisting Environment"* radio button
+	- In the *"Interpreter"* drop down list, select a interpreter which has *yourEnvironmentName* in it
+	   The entry would be something like,
+		"C:\Users\Anmol\.conda\envs\*yourEnvironmentName*\python.exe"
+	    In general,
+		global environment path\*yourEnvironmentName*\python.exe
+	- Click on *"OK"* and wait till package scanning process completes.
 		
 **NOTE : This will work if you are using Anaconda, You will have to figure out your own way for setup interpreter if you are using mannual setup.
 
