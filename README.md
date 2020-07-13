@@ -22,28 +22,30 @@ This just being a recommendation, *sokkalingam* should work fine with mannual py
 1. Install git and on your system, refer the below link to install git on your system depending on the operating system you use
 	(https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 	(https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/)
+
 **ONLY FOR WINDOWS**
 	You need to download and install Visual C++ Build tools from [here](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+
 2. Once you have installed Git for your operating system, clone *sokkalingam* repository by typing in 
-	'''
+	```
 	git clone https://github.com/nagarajanmolrao/sokkalingam
-	'''
+	```
 3. Open your Anaconda propmt or Terminal, Change into the directory of the repository.
 4. If your on windows you can re-create the same environment I created using the command
-	'''
+	```
 		conda env create -f environment.yml --name *yourEnvironmentName*
-	'''
+	```
 	Replace *yourEnvironmentName* with a custom environment name.
 	This will create a environment with all the dependencies and install RASA.
 5. Activate the environment with the command 
-	'''
+	```
 		conda activate *yourEnvironmentName*
-	'''
+	```
 6. Once you are using the newly created environment, the first thing to do is to install RASA-X
 This can be easily done by running the command
-	'''
+	```
 		pip install rasa-x -i https://pypi.rasa.com/simple
-	'''
+	```
 7. Once RASA-X is installed, Open your the project folder *sokkalingam* in PyCharm or any IDE you prefer
 8. Change your IDE's interpreter to the interpreter of your newly created environment.
 	Here in PyCharm, Follow these steps
@@ -56,12 +58,13 @@ This can be easily done by running the command
 			In general,
 				global environment path\*yourEnvironmentName*\python.exe
 		5. Click on *"OK"* and wait till package scanning process completes.
+		
 **NOTE : This will work if you are using Anaconda, You will have to figure out your own way for setup interpreter if you are using mannual setup.
 
 9. Run the following command to train the model
-	'''
+	```
 		rasa train
-	'''
+	```
 10. Please change the following values in the corresponding files mentioned
 	1. *"data/movieSchedule.json"*
 		Add or change the dates to whatever dates you want the bot to allow users to book tickets for.
@@ -86,19 +89,19 @@ You can refer the previous values as a template.
 	
 11. Run the *"Django_server.py"* file as it is required to send the images generated during the chat with *sokkalingam*.
 12. Run the following comamnd to start the rasa actions file with debugging info
-	'''
+	```
 		rasa run actions -x
-	'''
+	```
  You need to have this running in order to get replies from *sokkalingam*.
 13. You can start chatting with the *sokkalingam* using the command	
-	'''
+	```
 		rasa shell
-	'''
+	```
 	OR 
 	You can also start up RASA-X and chat in the RASA interface using the command
-	'''
+	```
 		rasa x
-	'''
+	```
 14. Go party!
 
 #screenshots
