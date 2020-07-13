@@ -130,7 +130,8 @@ You need to have this running in order to get replies from *sokkalingam*.
 ![7](Screenshots/7.jpg?raw=true)
 
 	
-For some reason, I don't know why , the generated images like the AvailableSeats and TicketQRCode don't show up on RASA-X
+For some reason, I don't know why , the generated images like the AvailableSeats and TicketQRCode don't show up on RASA-X.
+
 I am still trying to figure it out.
 	
 I am open for suggestions.
