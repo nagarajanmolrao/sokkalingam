@@ -130,9 +130,8 @@ dependencies:
     - pytz==2019.3
     - pyyaml==5.3.1
     - questionary==1.5.2
-    - rasa==1.10.3
-    - rasa-sdk==1.10.1
-    - rasa-x==0.29.2
+    - rasa
+    - rasa-sdk
     - redis==3.5.3
     - requests==2.24.0
     - requests-async==0.5.0
