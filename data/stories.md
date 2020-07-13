@@ -1,0 +1,244 @@
+## ideal_story
+* greet
+    - utter_greet
+    - utter_userBooking_confirmation
+* affirm
+    - ask_date
+    - slot{"movieDate":""}
+* dates
+    - slot{"movieDate":""}
+    - ask_movieChoice
+    - slot{"movieChoice":""}
+* movieChoice
+    - slot{"movieChoice":""}
+    - print_imdb_movie_details
+    - utter_movie_confirmation
+* affirm
+    - utter_ask_noTickets
+    - slot{"noTickets":""}
+* user_inputs_noTickets
+    - slot{"noTickets":""}
+    - slot_display
+* user_inputs_seats
+    - slot{"seats":""}
+    - slot_check
+    - utter_seat_confirmation
+* affirm
+    - utter_ask_pdName
+    - slot{"pdName":""}
+* user_inputs_pdName
+    - slot{"pdName":""}
+    - utter_ask_pdEmail
+    - slot{"pdEmail":""}
+* user_inputs_pdEmail
+    - slot{"pdEmail":""}
+    - utter_ask_pdNumber
+    - slot{"pdNumber":""}
+* user_inputs_pdNumber
+    - slot{"pdNumber":""}
+    - personal_details_check
+    - slot{"ticketDetails":""}
+    - utter_final_confirmation
+* affirm
+    - handle_payment
+    - slot{"payment_flag":""}
+    - ticket_generation
+    - utter_thanks
+    - utter_user_ticket_retrieval
+* affirm
+    - utter_request_ticketid
+    - slot{"ticketID":""} 
+* user_inputs_ticketid
+    - slot{"ticketID":""}   
+    - ticket_retrieval
+    - utter_thanks
+    - utter_goodbye
+    
+## user_denies_booking
+* greet
+    - utter_greet
+    - utter_userBooking_confirmation
+* deny
+    - utter_user_ticket_retrieval
+* affirm
+    - utter_request_ticketid
+    - slot{"ticketID":""} 
+* user_inputs_ticketid
+    - slot{"ticketID":""}   
+    - ticket_retrieval
+    - utter_thanks
+    
+## user_denies_ticket_retrieval
+* greet
+    - utter_greet
+    - utter_userBooking_confirmation
+* deny
+    - utter_user_ticket_retrieval
+* deny
+    - utter_thanks
+    
+##user_denies_selected_movie
+* greet
+    - utter_greet
+    - utter_userBooking_confirmation
+* affirm
+    - ask_date
+    - slot{"movieDate":""}
+* dates
+    - slot{"movieDate":""}
+    - ask_movieChoice
+    - slot{"movieChoice":""}
+* movieChoice
+    - slot{"movieChoice":""}
+    - print_imdb_movie_details
+    - utter_movie_confirmation
+* deny
+    - utter_userBooking_confirmation
+* affirm
+    - ask_date
+    - slot{"movieDate":""}
+
+##user_denies_movie_selection_correction
+* greet
+    - utter_greet
+    - utter_userBooking_confirmation
+* affirm
+    - ask_date
+    - slot{"movieDate":""}
+* dates
+    - slot{"movieDate":""}
+    - ask_movieChoice
+    - slot{"movieChoice":""}
+* movieChoice
+    - slot{"movieChoice":""}
+    - print_imdb_movie_details
+    - utter_movie_confirmation
+* deny
+    - utter_userBooking_confirmation
+* deny
+    - utter_goodbye
+
+##user_denies_seat_selection
+* greet
+    - utter_greet
+    - utter_userBooking_confirmation
+* affirm
+    - ask_date
+    - slot{"movieDate":""}
+* dates
+    - slot{"movieDate":""}
+    - ask_movieChoice
+    - slot{"movieChoice":""}
+* movieChoice
+    - slot{"movieChoice":""}
+    - print_imdb_movie_details
+    - utter_movie_confirmation
+* affirm
+    - utter_ask_noTickets
+    - slot{"noTickets":""}
+* user_inputs_noTickets
+    - slot{"noTickets":""}
+    - slot_display
+* user_inputs_seats
+    - slot{"seats":""}
+    - slot_check
+    - utter_seat_confirmation
+* deny
+    - utter_ask_noTickets
+    - slot{"noTickets":""}
+
+##user_denies_summary
+* greet
+    - utter_greet
+    - utter_userBooking_confirmation
+* affirm
+    - ask_date
+    - slot{"movieDate":""}
+* dates
+    - slot{"movieDate":""}
+    - ask_movieChoice
+    - slot{"movieChoice":""}
+* movieChoice
+    - slot{"movieChoice":""}
+    - print_imdb_movie_details
+    - utter_movie_confirmation
+* affirm
+    - utter_ask_noTickets
+    - slot{"noTickets":""}
+* user_inputs_noTickets
+    - slot{"noTickets":""}
+    - slot_display
+* user_inputs_seats
+    - slot{"seats":""}
+    - slot_check
+    - utter_seat_confirmation
+* affirm
+    - utter_ask_pdName
+    - slot{"pdName":""}
+* user_inputs_pdName
+    - slot{"pdName":""}
+    - utter_ask_pdEmail
+    - slot{"pdEmail":""}
+* user_inputs_pdEmail
+    - slot{"pdEmail":""}
+    - utter_ask_pdNumber
+    - slot{"pdNumber":""}
+* user_inputs_pdNumber
+    - slot{"pdNumber":""}
+    - personal_details_check
+    - slot{"ticketDetails":""}
+    - utter_final_confirmation
+* deny
+    - utter_ask_pdName
+    - slot{"pdName":""}
+    
+##user_denies_ticket_retrieval
+* greet
+    - utter_greet
+    - utter_userBooking_confirmation
+* affirm
+    - ask_date
+    - slot{"movieDate":""}
+* dates
+    - slot{"movieDate":""}
+    - ask_movieChoice
+    - slot{"movieChoice":""}
+* movieChoice
+    - slot{"movieChoice":""}
+    - print_imdb_movie_details
+    - utter_movie_confirmation
+* affirm
+    - utter_ask_noTickets
+    - slot{"noTickets":""}
+* user_inputs_noTickets
+    - slot{"noTickets":""}
+    - slot_display
+* user_inputs_seats
+    - slot{"seats":""}
+    - slot_check
+    - utter_seat_confirmation
+* affirm
+    - utter_ask_pdName
+    - slot{"pdName":""}
+* user_inputs_pdName
+    - slot{"pdName":""}
+    - utter_ask_pdEmail
+    - slot{"pdEmail":""}
+* user_inputs_pdEmail
+    - slot{"pdEmail":""}
+    - utter_ask_pdNumber
+    - slot{"pdNumber":""}
+* user_inputs_pdNumber
+    - slot{"pdNumber":""}
+    - personal_details_check
+    - slot{"ticketDetails":""}
+    - utter_final_confirmation
+* affirm
+    - handle_payment
+    - slot{"payment_flag":""}
+    - ticket_generation
+    - utter_thanks
+    - utter_user_ticket_retrieval
+* deny
+    - utter_goodbye
+    

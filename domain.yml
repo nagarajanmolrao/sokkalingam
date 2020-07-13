@@ -1,0 +1,137 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- thankyou
+- out_of_scope
+- dates
+- user_inputs_noTickets
+- user_inputs_pdName
+- user_inputs_pdEmail
+- user_inputs_pdNumber
+- user_inputs_movieChoice
+- movieChoice
+- user_inputs_seats
+- user_inputs_ticketid
+entities:
+- movieDate
+- movieChoice
+- noTickets
+- pdName
+- pdEmail
+- pdNumber
+- seats
+- ticketID
+slots:
+  movieChoice:
+    type: text
+  movieDate:
+    type: text
+  noTickets:
+    type: text
+  payment_flag:
+    type: bool
+  pdEmail:
+    type: text
+  pdName:
+    type: text
+  pdNumber:
+    type: text
+  seats:
+    type: text
+  ticketDetails:
+    type: text
+  ticketID:
+    type: text
+responses:
+  utter_greet:
+  - text: Hey Human!
+  - text: Hello
+  - text: Hi
+  - text: Hi,I hope you're doing well
+  utter_userBooking_confirmation:
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Would like me to book tickets for a movie?
+  utter_user_ticket_retrieval:
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Would like me to fetch your previously booked ticket?
+  utter_ask_noTickets:
+  - text: Please tell me the number of tickets you want me to book for the movie
+  utter_ask_pdName:
+  - text: 'Please input your name in the format [name: YOUR NAME] or in a sentence
+      like "my name is mad".'
+  utter_ask_pdEmail:
+  - text: 'Please input your email address in the format [email: YOUR EMAIL] or in
+      a sentence like "my email is patti.edwards@abia.org"'
+  utter_ask_pdNumber:
+  - text: 'Please input your 10 digit phone number without country code in the format
+      [phone: YOUR PHONE NUMBER] or in a sentence like "my number is 7053001314"'
+  utter_request_ticketid:
+  - text: 'Please input your Ticket ID in the format [ID: YOUR TICKET ID] or in a
+      sentence like "my ticket id is 1158"'
+  utter_thanks:
+  - text: Hope to see you soon!
+  utter_goodbye:
+  - text: Bye
+  utter_confirmation_for_booking:
+  - text: Would you like to continue booking tickets for this movie?
+  utter_form_deactivated:
+  - text: Booking cancelled !
+  utter_movie_confirmation:
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Continue to book tickets for this movie?
+  utter_seat_confirmation:
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Continue to book tickets for this movie with the selected seats?
+  utter_final_confirmation:
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Can I finalize and book the tickets ?
+actions:
+- utter_greet
+- utter_userBooking_confirmation
+- ask_date
+- ask_movieChoice
+- print_imdb_movie_details
+- utter_ask_noTickets
+- utter_ask_pdName
+- utter_ask_pdEmail
+- utter_ask_pdNumber
+- utter_thanks
+- utter_goodbye
+- utter_confirmation_for_booking
+- utter_form_deactivated
+- utter_movie_confirmation
+- utter_seat_confirmation
+- slot_display
+- slot_check
+- utter_final_confirmation
+- personal_details_check
+- ticket_generation
+- handle_payment
+- utter_user_ticket_retrieval
+- utter_request_ticketid
+- ticket_retrieval
