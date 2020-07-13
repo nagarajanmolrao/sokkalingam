@@ -60,7 +60,7 @@ Here in PyCharm, Follow these steps
 	   The entry would be something like,
 		"C:\Users\Anmol\.conda\envs\yourEnvironmentName\python.exe"
 	- In general,
-		global environment path\yourEnvironmentName\python.exe
+	global environment path\yourEnvironmentName\python.exe
 	- Click on "OK" and wait till package scanning process completes.
 		
 **NOTE : This will work if you are using Anaconda, You will have to figure out your own way for setup interpreter if you are using mannual setup.**
