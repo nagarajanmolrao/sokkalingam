@@ -61,7 +61,9 @@ Here in PyCharm, Follow these steps
 	- Select "Exsisting Environment" radio button
 	- In the "Interpreter" drop down list, select a interpreter which has yourEnvironmentName in it
 	   The entry would be something like,
-		"C:\Users\Anmol\.conda\envs\yourEnvironmentName\python.exe"
+		```
+		C:\Users\Anmol\.conda\envs\yourEnvironmentName\python.exe
+		```
 	- In general,"globalEnvironmentPath\yourEnvironmentName\python.exe"
 	- Click on "OK" and wait till package scanning process completes.
 		
