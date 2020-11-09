@@ -79,7 +79,7 @@ Here in PyCharm, Follow these steps
 			This is important because the bot reads this file first and asks a user to choose a date to continue booking tickets.
 			The bot reads and displays only dates that is greater than the current system date.
 		- Change the name of the movie next to the key values on a particular date
-			This is coimpletely optional as this is just a movie name that will be displayed by the bot.
+			This is completely optional as this is just a movie name that will be displayed by the bot.
 			You can leave the defaults unchanged.
 	2. *data/movieDetails.json*
 		- Add or change the dates to the same dates you changed in the *movieSchedule.json* file
@@ -91,6 +91,8 @@ Here in PyCharm, Follow these steps
 			This is important because the bot searches for the date selected by the user in this file to see the currently available seats for the corresponding 					movie the user has selected.
 		- Change any of the "0" to "1"
 			If you change any of the "0" to "1", the corresponding seat of the corresponding show on the corresponding date is available for the user for booking.
+			1 : If seat is available
+			0 : If seat is booked
 		
 It's just simple, one Key containing a date in *"data/movieSchedule.json"*, should have same date as key and should have some values in the files *"data/movieDetails.json"* and *"data/movieSeatMap.json"*
 
